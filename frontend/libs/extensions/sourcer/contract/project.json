@@ -1,7 +1,7 @@
 {
-  "name": "ext-template-contract",
+  "name": "ext-sourcer-contract",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/extensions/template/contract/src",
+  "sourceRoot": "libs/extensions/sourcer/contract/src",
   "prefix": "lib",
   "projectType": "library",
   "release": {
@@ -14,7 +14,7 @@
     }
   },
   "tags": [
-    "domain:template",
+    "domain:sourcer",
     "layer:contract"
   ],
   "targets": {
@@ -24,12 +24,12 @@
         "{workspaceRoot}/dist/{projectRoot}"
       ],
       "options": {
-        "project": "libs/extensions/template/contract/ng-package.json",
-        "tsConfig": "libs/extensions/template/contract/tsconfig.lib.json"
+        "project": "libs/extensions/sourcer/contract/ng-package.json",
+        "tsConfig": "libs/extensions/sourcer/contract/tsconfig.lib.json"
       },
       "configurations": {
         "production": {
-          "tsConfig": "libs/extensions/template/contract/tsconfig.lib.prod.json"
+          "tsConfig": "libs/extensions/sourcer/contract/tsconfig.lib.prod.json"
         },
         "development": {}
       },
@@ -44,7 +44,7 @@
       "executor": "@nx/angular:unit-test",
       "options": {
         "watch": false,
-        "runnerConfig": "libs/extensions/template/contract/vitest.config.ts"
+        "runnerConfig": "libs/extensions/sourcer/contract/vitest.config.ts"
       }
     },
     "lint": {

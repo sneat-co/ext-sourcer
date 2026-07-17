@@ -1,19 +1,24 @@
-# sneat-ext-contract-template
+# ext-sourcer
 
-Template repository for creating a public `ext-<id>` contract repository.
-
-`frontend/` is the sole owner and publisher of
-`@sneat/extension-template-contract`. The paired implementation template is
-[`sneat-ext-template`](../sneat-ext-template); it consumes this package and owns
-the runtime/app code.
-
-For a new extension, create `ext-<id>` from this template, rename `template`,
-publish the contract, and then point the `<id>` implementation at that release.
+Public extension-definition repository for **Sourcer** (sourcer.express) — the
+AI sourcing agent for hard-to-find products and services. Owns and publishes
+`@sneat/extension-sourcer-contract`; the paired implementation repo is
+[`sourcer`](https://github.com/sneat-co/sourcer), which consumes the published
+package and owns the runtime/app code.
 
 ## Layout
 
 ```text
 typespec/   # frozen wire contract
 backend/    # contract-facing Go definitions and checks
-frontend/   # @sneat/extension-<id>-contract workspace
+frontend/   # @sneat/extension-sourcer-contract workspace
 ```
+
+## Publishing
+
+Push to `main` touching `frontend/**` publishes via the shared
+`sneat-co/cicd` npm-publish workflow (`.github/workflows/publish.yml`),
+or run the workflow manually with a version specifier.
+
+Spec & architecture: `sneat-co/backstage` — `spec/features/sourcer/`,
+`docs/architecture/sourcer.md`.

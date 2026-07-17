@@ -1,5 +1,5 @@
 {
-  "name": "@sneat/extension-template-contract",
+  "name": "@sneat/extension-sourcer-contract",
   "version": "0.0.1",
   "publishConfig": {
     "access": "public"

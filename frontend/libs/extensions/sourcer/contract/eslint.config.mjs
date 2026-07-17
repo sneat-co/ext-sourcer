@@ -26,7 +26,7 @@ export default [
         'error',
         {
           type: 'attribute',
-          prefix: 'template',
+          prefix: 'sourcer',
           style: 'camelCase',
         },
       ],
@@ -34,7 +34,7 @@ export default [
         'error',
         {
           type: 'element',
-          prefix: 'template',
+          prefix: 'sourcer',
           style: 'kebab-case',
         },
       ],
@@ -44,8 +44,8 @@ export default [
     files: ['**/*.html'],
     rules: {
       // Migrated templates predate these a11y rules; tracked for a later pass.
-      '@angular-eslint/template/click-events-have-key-events': 'off',
-      '@angular-eslint/template/interactive-supports-focus': 'off',
+      '@angular-eslint/sourcer/click-events-have-key-events': 'off',
+      '@angular-eslint/sourcer/interactive-supports-focus': 'off',
     },
   },
 ];
