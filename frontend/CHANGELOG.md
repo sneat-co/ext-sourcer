@@ -1,3 +1,9 @@
+## 0.1.1 (2026-08-05)
+
+### 🩹 Fixes
+
+- **deps:** update javascript dependencies ([#8](https://github.com/sneat-co/ext-sourcer/pull/8))
+
 ## 0.1.0 (2026-07-17)
 
 This was a version bump only, there were no code changes.
